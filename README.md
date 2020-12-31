@@ -3,6 +3,7 @@
 
 Created with Android Studio!
 
+Install the APK file to run on your AVD or Android Device
 
 ## In Sanskrit, “Astra” means weapon. 
 
