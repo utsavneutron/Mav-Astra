@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00447c"
+
+    tools:context=".medicalAppointment">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/bg1" />
+
+        <!-- Name Label -->
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/input_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:drawableStart="@drawable/ic_person"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:hint="  Name"
+                android:drawableLeft="@drawable/ic_person" />
+
+        <EditText android:id="@+id/selecthealthCenter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:drawableStart="@drawable/ic_home"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+
+            android:hint="  Select Health Center"
+            android:drawableLeft="@drawable/ic_person" />
+
+
+        <EditText android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_calendar"
+            android:hint="  Select Date"
+            android:drawableLeft="@drawable/ic_calendar"
+            android:inputType="date"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            />
+
+        <EditText android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_time"
+            android:hint="  Select Time"
+            android:drawableLeft="@drawable/ic_time"
+            android:inputType="date"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            />
+
+        <Button
+            android:id="@+id/submithelthCenter"
+            android:layout_width="325dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="16dp"
+            android:background="#ffffff"
+            android:text="Submit"
+            />
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/raisefunds"
+    tools:context=".raiseFunds">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/googlesans_bold"
+            android:text="Raise Funds"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                app:cardCornerRadius="30dp"
+                android:clickable="true"
+                android:id="@+id/raiseTile1"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="#0064b1"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="SPARK UTA"
+                        android:fontFamily="@font/googlesans_bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="SPARK UTA is the official crowdfunding platform for The University of Texas at Arlington."
+                        android:fontFamily="@font/googlesans_bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="20dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:clickable="true"
+                android:id="@+id/raiseTile2"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="#FFE681"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Raise Funds"
+                        android:fontFamily="@font/googlesans_bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Reach out to you peers and raise funds using Mav-Astra with no cost involved. "
+                        android:fontFamily="@font/googlesans_bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="20dp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:rowCount="4"
+            android:columnCount="2"
+            android:layout_margin="5dp"
+            android:alignmentMode="alignMargins"
+            android:layout_gravity="center_horizontal"
+            android:columnOrderPreserved="false">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="#00447c"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Excel Fund Raiser"
+                        android:fontFamily="@font/googlesans_bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="20dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                android:clickable="true"
+                android:id="@+id/medicalTile"
+                app:cardBackgroundColor="#BA0C2E"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="CSE Women Who Code Fund Raiser"
+                        android:fontFamily="@font/googlesans_bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="20dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+    </LinearLayout>
+</ScrollView>

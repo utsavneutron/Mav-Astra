@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".bmiCalculator">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bg1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI Calculator"
+        android:textColor="#0064b1"
+        android:textSize="45sp"
+        android:layout_marginVertical="10dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="15dp"
+
+        android:text="Your Weight in lbs" />
+
+    <EditText
+        android:id="@+id/bmiWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:padding="12dp"
+        android:inputType="numberDecimal"
+        android:layout_marginVertical="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Your Height in feet"
+        android:layout_marginVertical="15dp"/>
+
+
+    <EditText
+        android:id="@+id/bmiHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:padding="12dp"
+        android:inputType="numberDecimal"
+        android:layout_marginVertical="15dp" />
+
+    <Button
+        android:id="@+id/bmiBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="15dp"
+        android:layout_marginHorizontal="30dp"
+        android:text="Calculate"
+        android:background="@drawable/button_bg"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:text="Your BMI is:"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/bmiResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textColor="@color/colorPrimary"/>
+</LinearLayout>

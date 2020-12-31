@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/vegitables"
+    tools:context=".mDine">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eat on Campus!"
+            android:fontFamily="@font/googlesans_bold"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:layout_margin="20dp"/>
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:rowCount="4"
+            android:columnCount="2"
+            android:layout_margin="5dp"
+            android:alignmentMode="alignMargins"
+            android:layout_gravity="center_horizontal"
+            android:columnOrderPreserved="false">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                android:clickable="true"
+                android:id="@+id/connectioncafeTile"
+                app:cardBackgroundColor="@color/gray"
+                android:src="@drawable/connectioncafebg"
+
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/connectioncafe"
+                        android:layout_marginTop="18dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Connection Cafe"
+                        android:fontFamily="@font/googlesans_bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="20dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:clickable="true"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                android:id="@+id/starbucksTile"
+                app:cardBackgroundColor="#00447c"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/starbucks"
+                        android:layout_marginTop="18dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Starbucks"
+                        android:fontFamily="@font/googlesans_bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="20dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                android:clickable="true"
+                android:id="@+id/utaplazaTile"
+                app:cardBackgroundColor="#692917"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/ucplaza"
+                        android:layout_marginTop="18dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="UTA Plaza"
+                        android:fontFamily="@font/googlesans_bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="20dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                android:id="@+id/maverickcafeTile"
+                app:cardBackgroundColor="#000000"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="80dp"
+                        android:clickable="true"
+                        android:src="@drawable/maverickcafe"
+                        android:layout_marginTop="18dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Maverick Cafe
+                            West Campus"
+                        android:fontFamily="@font/googlesans_bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="20dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+    </LinearLayout>
+</RelativeLayout>

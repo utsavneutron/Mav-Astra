@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    tools:context=".blooddonationAppointment">
+
+    <View
+        android:id="@+id/topView"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:background="#660000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:background="@drawable/ic_wave"
+        app:layout_constraintBottom_toTopOf="@+id/FullName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topView" />
+
+    <TextView
+        android:id="@+id/mavname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="MAV Astra"
+        android:textColor="@color/colorPrimary"
+        android:textSize="2sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/login_page"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/login_page"
+        android:layout_width="18dp"
+        android:layout_height="26dp"
+        android:layout_marginBottom="17dp"
+        android:text="."
+
+        android:textColor="#660000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/FullName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mavname" />
+
+
+    <EditText
+        android:id="@+id/FullName"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="1dp"
+        android:background="#ffff"
+
+        android:ems="10"
+        android:hint="  Full Name"
+        android:drawableStart="@drawable/ic_person"
+
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="#939598"
+        android:textColorHint="#939598"
+        android:textSize="18sp"
+        android:topLeftRadius="15dp"
+        android:topRightRadius="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_page" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="1dp"
+        android:background="#ffff"
+        android:drawableStart="@drawable/ic_email"
+        android:ems="10"
+        android:hint="  Email"
+        android:inputType="textEmailAddress"
+        android:padding="14dp"
+        android:textColor="#939598"
+        android:textColorHint="#939598"
+        app:layout_constraintBottom_toTopOf="@+id/address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FullName" />
+
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="360dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="10dp"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="11dp"
+        android:background="#ffff"
+        android:drawableStart="@drawable/ic_home"
+        android:ems="10"
+        android:hint="  Address"
+        android:inputType="textPostalAddress"
+        android:padding="10dp"
+        android:textColor="#939598"
+        android:textColorHint="#939598"
+        app:layout_constraintBottom_toTopOf="@+id/Phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Email" />
+
+    <EditText
+        android:id="@+id/Phone"
+        android:layout_width="360dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="10dp"
+
+        android:layout_marginBottom="11dp"
+        android:background="#ffff"
+        android:drawableStart="@drawable/ic_phone"
+
+        android:hint="  Contact Number"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:paddingLeft="10dp"
+        android:textColor="#939598"
+        android:textColorHint="#939598"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_bg"
+        android:text="Submit"
+        android:textColor="#ffffff"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Phone" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

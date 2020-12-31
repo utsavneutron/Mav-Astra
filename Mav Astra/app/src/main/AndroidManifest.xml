@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mavastra_login">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".blooddonationAppointment"
+            android:label="@string/title_activity_blooddonation_appointment"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".bloodDonation" />
+        <activity
+            android:name=".raiseFunds"
+            android:label="@string/title_activity_raise_funds"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".utaQ"
+            android:label="@string/title_activity_uta_q"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".insideFit"
+            android:label="@string/title_activity_inside_fit"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".utaMac" />
+        <activity
+            android:name=".addcreditCard"
+            android:label="@string/title_activity_addcredit_card"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".healthTranscripts2" />
+        <activity android:name=".healthTranscripts1" />
+        <activity android:name=".healthTranscripts" />
+        <activity android:name=".utaSos" />
+        <activity android:name=".bmiCalculator" />
+        <activity android:name=".mClasses" />
+        <activity android:name=".creditcard" />
+        <activity android:name=".maverickcafe" />
+        <activity android:name=".utaplaza" />
+        <activity
+            android:name=".starbucks"
+            android:label="@string/title_activity_starbucks"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".connectionCafe"
+            android:label="@string/title_activity_connection_cafe"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".mDine"
+            android:label="@string/title_activity_m_dine"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".insideToday" />
+        <activity
+            android:name=".medicalAppointment"
+            android:label="@string/title_activity_medical_appointment"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".mHealth"
+            android:label="@string/title_activity_m_health"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".mSeva" />
+        <activity
+            android:name=".MavPay"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_mav_pay"
+            android:theme="@style/FullscreenTheme" />
+        <activity android:name=".login" />
+        <activity android:name=".Register">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

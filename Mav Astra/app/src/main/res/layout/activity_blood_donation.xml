@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/raisefunds"
+    tools:context=".raiseFunds">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/googlesans_bold"
+            android:text="Raise Funds"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+
+
+
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            app:cardCornerRadius="30dp"
+            android:clickable="true"
+            android:id="@+id/blooddonationTile1"
+            app:cardElevation="5dp"
+            app:cardBackgroundColor="#BA0C2E"
+            android:layout_margin="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Donate Blood"
+                    android:fontFamily="@font/googlesans_bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="URGENT O+ required at UTA Clinic. "
+                    android:fontFamily="@font/googlesans_bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="20dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:clickable="true"
+            android:id="@+id/blooddonationTile2"
+
+            app:cardCornerRadius="30dp"
+            app:cardElevation="5dp"
+            app:cardBackgroundColor="#FFE681"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Donate Blood"
+                    android:fontFamily="@font/googlesans_bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="AB- required at Arlington Hospital."
+                    android:fontFamily="@font/googlesans_bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="20dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>
